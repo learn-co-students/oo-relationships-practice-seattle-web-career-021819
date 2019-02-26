@@ -22,7 +22,7 @@ Trip.new(g3, l1)
 Trip.new(g4, l1)
 Trip.new(g4, l2)
 
-puts "Listings by City"
+puts "Listings by City (Seattle)"
 Listing.find_all_by_city("Seattle").each {|listing| puts listing.name}
 puts
 puts "Most Popular Listing"
@@ -30,5 +30,8 @@ puts Listing.most_popular.name
 puts
 puts "Pro Traveller"
 Guest.pro_traveller.each {|guest| puts guest.name}
+
+# ================ IMDB TESTS ===================
+
 
 Pry.start
