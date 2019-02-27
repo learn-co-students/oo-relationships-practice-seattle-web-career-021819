@@ -81,57 +81,61 @@ end
 # puts
 #
 # ============== CROWDFUNDING TESTS =================
+# puts
+# puts("===== CROWDFUNDING =====")
+# u1 = User.new("User 1")
+# u2 = User.new("User 2")
+# u3 = User.new("User 3")
+# u4 = User.new("User 4")
+# u5 = User.new("User 5")
+#
+# p1 = Project.new("Project 1", u1, 10000)
+# p2 = Project.new("Project 2", u2, 20000)
+# p3 = Project.new("Project 3", u4, 30000)
+# p4 = Project.new("Project 4", u4, 40000)
+# p5 = Project.new("Project 5", u5, 50000)
+# p6 = Project.new("Project 6", u2, 20000)
+# p7 = Project.new("Project 7", u5, 30000)
+# p8 = Project.new("Project 8", u4, 40000)
+#
+# Pledge.new(p1, u2, 10000)
+# Pledge.new(p2, u3, 15000)
+# Pledge.new(p3, u4, 20000)
+# Pledge.new(p4, u5, 25000)
+# Pledge.new(p5, u1, 30000)
+# Pledge.new(p4, u3, 15000)
+# Pledge.new(p3, u2, 20000)
+# Pledge.new(p2, u1, 25000)
+# Pledge.new(p2, u4, 10000)
+#
+# puts "Highest Pledge"
+# puts User.highest_pledge.name
+# puts
+# puts "Multi-Pledger"
+# User.multi_pledger.each do |user|
+#   puts user.name
+# end
+# puts
+# puts "Project Creators"
+# User.project_creator.each do |user|
+#   puts user.name
+# end
+# puts
+# puts "No Pledges"
+# Project.no_pledges.each do |project|
+#   puts project.name
+# end
+# puts
+# puts "Above Goal"
+# Project.above_goal.each do |project|
+#   puts project.name
+# end
+# puts
+# puts "Most Backers"
+# puts Project.most_backers.name
+# ================= GYM TESTS ====================
 puts
-puts("===== CROWDFUNDING =====")
-u1 = User.new("User 1")
-u2 = User.new("User 2")
-u3 = User.new("User 3")
-u4 = User.new("User 4")
-u5 = User.new("User 5")
+puts("========= GYM ========")
 
-p1 = Project.new("Project 1", u1, 10000)
-p2 = Project.new("Project 2", u2, 20000)
-p3 = Project.new("Project 3", u4, 30000)
-p4 = Project.new("Project 4", u4, 40000)
-p5 = Project.new("Project 5", u5, 50000)
-p6 = Project.new("Project 6", u2, 20000)
-p7 = Project.new("Project 7", u5, 30000)
-p8 = Project.new("Project 8", u4, 40000)
-
-Pledge.new(p1, u2, 10000)
-Pledge.new(p2, u3, 15000)
-Pledge.new(p3, u4, 20000)
-Pledge.new(p4, u5, 25000)
-Pledge.new(p5, u1, 30000)
-Pledge.new(p4, u3, 15000)
-Pledge.new(p3, u2, 20000)
-Pledge.new(p2, u1, 25000)
-Pledge.new(p2, u4, 10000)
-
-puts "Highest Pledge"
-puts User.highest_pledge.name
-puts
-puts "Multi-Pledger"
-User.multi_pledger.each do |user|
-  puts user.name
-end
-puts
-puts "Project Creators"
-User.project_creator.each do |user|
-  puts user.name
-end
-puts
-puts "No Pledges"
-Project.no_pledges.each do |project|
-  puts project.name
-end
-puts
-puts "Above Goal"
-Project.above_goal.each do |project|
-  puts project.name
-end
-puts
-puts "Most Backers"
-puts Project.most_backers.name
 
 Pry.start
