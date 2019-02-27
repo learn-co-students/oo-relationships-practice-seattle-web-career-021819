@@ -38,10 +38,9 @@ class Project
       project_pledges[pledge.project] += pledge.amount
     end
 
-    self.all.select do |project|
-      project_pledges[project] &&
-      project_pledges[project] >= project.pledge_goal
-    end
+    project_pledges.select do |project, pledges|
+      pledges >= project.pledge_goal
+    end.keys
   end
 
   # Returns the project with the highest number of backers
